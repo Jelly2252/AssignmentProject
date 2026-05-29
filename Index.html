@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>dashboard</h1>
+    <header>
+    <h1>TASK MANAGEMENT</h1>
+    <p>Welcome Back</p> 
+    </header>
+
+    <div class="menu">
+        <button class="menu-btn" onclick="toggleMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+        </button>
+        <nav class="sidebar" id="sidebar">
+             <a href="#">Groupwork</a>
+             <a href="#">Individual</a>
+             <a href="#">Projects</a>
+             <a href="#">Research</a>
+             <a href="#">Task Done</a>
+        </nav>
+    </div>
+    <div class="mainbox">
+            <div class="groupbox"><p>Groupwork</p></div>
+            <div class="individualbox"><p>Individual</p></div>
+            <div class="projectsbox"><p>Projects</p></div>
+            <div class="researchbox"><p>Research</p></div>
+            <div class="taskdonebox"><p>Task Done</p></div>
+    </div>
+    <div class="calendar">
+<iframe src="https://calendar.google.com/calendar/embed?src=angelamaina001%40gmail.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <footer><p>&copy; 2023 Task Management. All rights reserved.</p></footer>
 </body>
+<script>
+    function toggleMenu() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('active');
+}
+</script>
 </html>
