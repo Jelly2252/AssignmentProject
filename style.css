@@ -77,7 +77,7 @@ header p{
     gap: 50px;
     padding: 50px;
     padding-left: 200px;
-    background-color:rgb(255, 255, 255 ,0.5);
+    /*background-color:rgb(255, 255, 255 ,0.5);*/
     border-radius: 8px;
     width: 100%;
     height: 600px;
@@ -88,7 +88,7 @@ header p{
 
     font-size: 1.8rem;
     font-weight: 600;
-    color: #333;
+    /*color: #333;*/
 }
 .groupbox{
     display: flex;
@@ -175,4 +175,68 @@ footer{
   padding: 20px;
   background-color: rgb(0, 0, 0);
   color: white;
+}
+/* --- 1. Global Page Styles & Variables --- */
+:root {
+    --bg-page: transparent;
+    --bg-track: transparent;
+    --border-track: black;
+    --bg-knob: white;
+}
+
+/* These variables activate when the 'dark' class is added to the body */
+body.dark {
+    --bg-page: #000000;
+    --bg-track: #000000;
+    --border-track: #ffffff;
+}
+body {
+    background-color: var(--bg-page);
+    transition: background-color 0.3s ease;
+    margin: 0;
+}
+
+/* --- 2. Outer Track --- */
+.myBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Locks it to the right side safely */
+    width: 44px; /* Slightly wider to accommodate a 20px knob */
+    height: 24px;
+    background: var(--bg-track);
+    border: var(--border-track) solid 2px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    box-sizing: border-box;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+/* --- 3. Inner Moving Knob --- */
+.myBtn2 {
+    background: var(--bg-knob);
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    /* Smooth sliding animation instead of changing margins */
+    transition: transform 0.2s ease, background-color 0.3s;
+    transform: translateX(0); 
+}
+
+/* When the body is dark, slide the inner button over to the right side of the track */
+body.dark .myBtn2 {
+    transform: translateX(20px); 
+    background-color:white;
+}
+body.dark.mainbox  {
+    background-color:black;
+    color:white;
+    
+}
+body.dark .mainbox p{
+  color:white;
+  
 }

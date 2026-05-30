@@ -8,6 +8,12 @@
 </head>
 <body>
     <header>
+      <!-- Outer track -->
+<div class="myBtn">
+    <!-- Inner moving knob -->
+    <button class="myBtn2" id="toggle-knob" onclick="myFunction()" aria-label="Toggle theme"></button>
+</div>
+
     <h1>TASK MANAGEMENT</h1>
     <p>Welcome Back</p> 
     </header>
@@ -43,5 +49,14 @@
   const sidebar = document.getElementById('sidebar');
   sidebar.classList.toggle('active');
 }
+function myFunction() {
+    // Select the main body element of the page
+    const pageBody = document.body;
+    
+    // .toggle() automatically adds the class if it's missing, 
+    // and removes it if it's already there.
+    pageBody.classList.toggle("dark");
+}
+
 </script>
-</html>
+</html
