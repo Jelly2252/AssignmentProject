@@ -25,6 +25,28 @@ header p{
   font-size: 20px;
   font-weight: 600;
 }
+.signin{
+   position: absolute;
+   right: 18px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 30px;
+   border: #3b83f6 2px solid;
+   text-align: center;
+   
+}
+.signin :hover{
+    background-color:rgb(59, 131, 246 , 0.7) ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.signin a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    
+   
+}
 .menu-btn {
   display: flex;
   flex-direction: column;
@@ -89,6 +111,11 @@ header p{
     font-size: 1.8rem;
     font-weight: 600;
     /*color: #333;*/
+}
+.mainbox a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #000000;
 }
 .groupbox{
     display: flex;
@@ -199,7 +226,7 @@ body {
 /* --- 2. Outer Track --- */
 .myBtn {
     position: absolute;
-    top: 20px;
+    top: 50px;
     right: 20px; /* Locks it to the right side safely */
     width: 44px; /* Slightly wider to accommodate a 20px knob */
     height: 24px;

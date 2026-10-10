@@ -9,13 +9,15 @@
 <body>
     <header>
       <!-- Outer track -->
-<div class="myBtn">
+<div class="myBtn"id="toggle-knob" onclick="myFunction()" aria-label="Toggle theme">
     <!-- Inner moving knob -->
-    <button class="myBtn2" id="toggle-knob" onclick="myFunction()" aria-label="Toggle theme"></button>
+    <button class="myBtn2" ></button>
 </div>
 
+
+    <button class="signin" ><a href="login.html">Sign in</a></button>
     <h1>TASK MANAGEMENT</h1>
-    <p>Welcome Back</p> 
+    <p >Welcome Back</p> 
     </header>
 
     <div class="menu">
@@ -25,24 +27,24 @@
              <span></span>
         </button>
         <nav class="sidebar" id="sidebar">
-             <a href="#">Groupwork</a>
-             <a href="#">Individual</a>
-             <a href="#">Projects</a>
-             <a href="#">Research</a>
-             <a href="#">Task Done</a>
+             <a href="groupwork.html">Groupwork</a>
+             <a href="individual.html">Individual</a>
+             <a href="project.html">Projects</a>
+             <a href="research.html">Research</a>
+             <a href="taskdone.html">Task Done</a>
         </nav>
     </div>
     <div class="mainbox">
-            <div class="groupbox"><p>Groupwork</p></div>
-            <div class="individualbox"><p>Individual</p></div>
-            <div class="projectsbox"><p>Projects</p></div>
-            <div class="researchbox"><p>Research</p></div>
-            <div class="taskdonebox"><p>Task Done</p></div>
+            <a href="groupwork.html"><div class="groupbox">GroupWork</div></a>
+            <a href="individual.html"><div class="individualbox">Individual</div></a>
+            <a href="project.html"><div class="projectsbox">Project</div></a>
+            <a href="research.html"><div class="researchbox">Research</div></a>
+            <a href="taskdone.html"><div class="taskdonebox">Taskdone</div></a>
     </div>
     <div class="calendar">
 <iframe src="https://calendar.google.com/calendar/embed?src=angelamaina001%40gmail.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
-    <footer><p>&copy; 2023 Task Management. All rights reserved.</p></footer>
+    <footer><p>&copy; 2026 Task Management. All rights reserved.</p></footer>
 </body>
 <script>
     function toggleMenu() {
