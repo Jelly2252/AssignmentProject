@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="modules.css">
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<header>
+    <div class="myBtn"id="toggle-knob" onclick="myFunction()" aria-label="Toggle theme">
+    <!-- Inner moving knob -->
+         <button class="myBtn2" ></button>
+    </div>
+     <h1>TASK MANAGEMENT</h1>
+    <h2>Individual Work</h2>
+</header>
+     
+<div class="menu">
+        <button class="menu-btn" onclick="toggleMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+        </button>
+        <nav class="sidebar" id="sidebar">
+             <a href="Index.html">Home</a>
+             <a href="groupwork.html">Groupwork</a>
+             <a href="individual.html">Individual</a>
+             <a href="project.html">Projects</a>
+             <a href="research.html">Research</a>
+             <a href="taskdone.html">Task Done</a>
+        </nav>
+    </div>
+</body>
+<script>
+    function toggleMenu() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('active');
+}
+function myFunction() {
+    // Select the main body element of the page
+    const pageBody = document.body;
+    
+    // .toggle() automatically adds the class if it's missing, 
+    // and removes it if it's already there.
+    pageBody.classList.toggle("dark");
+}
+
+</script>
+</html>
